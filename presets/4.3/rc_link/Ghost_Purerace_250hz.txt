@@ -15,7 +15,7 @@ set serialrx_provider = GHST
 # rc smoothing should always be enabled with Ghost
 set rc_smoothing = ON
 
-set feedforward_averaging = 2_POINT
+set feedforward_averaging = OFF
 set feedforward_smooth_factor = 35
 set feedforward_jitter_factor = 6
 
@@ -27,21 +27,21 @@ set report_cell_voltage = OFF
 
 # sharper handling for racing:
 #$ OPTION BEGIN (UNCHECKED): Race feedforward settings
-set feedforward_averaging = 2_POINT
+set feedforward_averaging = OFF
 set feedforward_smooth_factor = 25
 set feedforward_jitter_factor = 5
 #$ OPTION END
 
 # stronger smoothing for HD freestyle:
 #$ OPTION BEGIN (UNCHECKED): HD Freestyle feedforward settings
-set feedforward_averaging = 2_POINT
+set feedforward_averaging = OFF
 set feedforward_smooth_factor = 50
 set feedforward_jitter_factor = 10
 #$ OPTION END
 
 # stronger smoothing for Cinematic flying:
 #$ OPTION BEGIN (UNCHECKED): Cinematic feedforward settings
-set feedforward_averaging = 2_POINT
+set feedforward_averaging = OFF
 set feedforward_smooth_factor = 65
 set feedforward_jitter_factor = 12
 #$ OPTION END
